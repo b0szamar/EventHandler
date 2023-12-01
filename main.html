@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Event</title>
+<style>
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.btn {
+    margin: 10px;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+} </style>
+</head>
+
+<body>
+    A kiirandó szöveg:
+      <input type="text" id="szoveg" name="text">
+<button class="btn" onclick="fgv()">Nyomj meg!</button>
+
+<script>
+function fgv(){
+const button = document.querySelector(".btn")
+var valtozo=document.getElementById("szoveg").value;
+button.onclick = () => {
+console.log(valtozo)
+}
+}
+</script>
+
+</body>
+</html>
